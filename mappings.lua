@@ -7,6 +7,18 @@ return {
   -- first key is the mode
   n = {
     -- second key is the lefthand side of the map
+    ["H"] = { "^", desc = "Move cursor to the start of line" },
+    ["L"] = { "$", desc = "Move cursor to the end of line" },
+    ["K"] = { "<C-b>M", desc = "Page up" },
+    ["J"] = { "<C-f>M", desc = "Page down" },
+
+    ["gh"] = { "<cmd>wincmd h<cr>", desc = "Normal left window navigation" },
+    ["gj"] = { "<cmd>wincmd j<cr>", desc = "Normal down window navigation" },
+    ["gk"] = { "<cmd>wincmd k<cr>", desc = "Normal up window navigation" },
+    ["gl"] = { "<cmd>wincmd l<cr>", desc = "Normal right window navigation" },
+
+    ["+"] = { "J", desc = "Connect lines" },
+    ["U"] = { "<C-r>", desc = "Redo" },
 
     -- navigate buffer tabs with `H` and `L`
     -- L = {
@@ -36,5 +48,15 @@ return {
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+    ["gh"] = { "<cmd>wincmd h<cr>", desc = "Terminal left window navigation" },
+    ["gj"] = { "<cmd>wincmd j<cr>", desc = "Terminal down window navigation" },
+    ["gk"] = { "<cmd>wincmd k<cr>", desc = "Terminal up window navigation" },
+    ["gl"] = { "<cmd>wincmd l<cr>", desc = "Terminal right window navigation" },
   },
+  v = {
+    ["H"] = { "^", desc = "Move cursor to the start of line" },
+    ["L"] = { "$", desc = "Move cursor to the end of line" },
+    ["K"] = { "<C-b>M", desc = "Page up" },
+    ["J"] = { "<C-f>M", desc = "Page down" },
+  }
 }
