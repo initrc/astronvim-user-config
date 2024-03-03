@@ -60,5 +60,6 @@ return {
     ["L"] = { "$", desc = "Move cursor to the end of line" },
     ["K"] = { "<C-b>M", desc = "Page up" },
     ["J"] = { "<C-f>M", desc = "Page down" },
+    ["<leader>mf"] = {":'<,'>!pandoc -t commonmark_x<cr><cr>" },
   }
 }
