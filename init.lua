@@ -18,7 +18,8 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "rose-pine-dawn",
+  colorscheme = "everforest", -- dark
+  -- colorscheme = "rose-pine-dawn", -- light
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
